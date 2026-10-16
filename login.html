@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#087c55"><title>Sign in | Salmikkhang Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="auth-brand" href="/" aria-label="Salmikkhang home"><span class="brand-mark">🌿</span><span><strong>SALMIKKHANG</strong><small>Village Youth Community</small></span></a>
+    <section class="auth-card">
+      <div class="auth-kicker">WELCOME BACK</div><h1>Sign in to your community</h1><p class="auth-lead">Members can use the ID created by the admin. Admin access requires the admin name and passcode.</p>
+      <form id="loginForm" novalidate>
+        <label for="roleSelect">Role</label><select id="roleSelect" name="role" required><option value="">Loading roles…</option></select>
+        <div id="adminFields" hidden>
+          <label for="adminName">Admin name</label><input id="adminName" name="name" autocomplete="username" maxlength="80" placeholder="Enter the admin name">
+          <label for="adminPasscode">Admin passcode</label><input id="adminPasscode" name="passcode" type="password" autocomplete="current-password" maxlength="200" placeholder="Enter your admin passcode">
+        </div>
+        <div id="memberFields" hidden>
+          <label for="memberId">Member ID</label><input id="memberId" name="memberId" autocomplete="username" maxlength="32" placeholder="ID given by the admin">
+          <label for="memberPassword">Password</label><input id="memberPassword" name="password" type="password" autocomplete="current-password" maxlength="200" placeholder="Your member password">
+        </div>
+        <p class="auth-error" id="authError" role="alert" hidden></p>
+        <button class="auth-submit" type="submit" id="loginSubmit">Continue <span>→</span></button>
+      </form>
+      <div class="auth-footnote"><span class="lock-icon">⌑</span> Admin permissions are verified by the server. Changing the selected role cannot grant admin access.</div>
+    </section>
+    <div class="auth-bottom"><a href="/">← Back to website</a><span>Gaira · Madhupur · Tangail</span></div>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>

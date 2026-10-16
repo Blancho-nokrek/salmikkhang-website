@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087c55">
+  <title>First-time setup | Salmikkhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <a class="auth-brand" href="/" aria-label="Salmikkhang home"><span class="brand-mark">🌿</span><span><strong>SALMIKKHANG</strong><small>Village Youth Community</small></span></a>
+    <section class="auth-card">
+      <div class="auth-kicker">FIRST-TIME SETUP</div><h1>Create the first admin</h1><p class="auth-lead">Set your admin name and a strong passcode. This setup page automatically closes after the first admin is created.</p>
+      <form id="setupForm" novalidate>
+        <label for="setupName">Admin name</label><input id="setupName" name="name" required minlength="2" maxlength="80" autocomplete="name" placeholder="Name used to sign in">
+        <label for="setupPasscode">Admin passcode</label><input id="setupPasscode" name="passcode" required type="password" minlength="10" maxlength="200" autocomplete="new-password" placeholder="At least 10 characters">
+        <label for="setupConfirm">Confirm passcode</label><input id="setupConfirm" name="confirm" required type="password" minlength="10" maxlength="200" autocomplete="new-password" placeholder="Enter it again">
+        <p class="auth-error" id="authError" role="alert" hidden></p>
+        <button class="auth-submit" type="submit" id="setupSubmit">Create administrator <span>→</span></button>
+      </form>
+      <div class="auth-footnote"><span class="lock-icon">⌑</span> The passcode is stored as a one-way password hash, not in plain text.</div>
+    </section>
+    <div class="auth-bottom"><a href="/">← Back to website</a><span>Keep this passcode private</span></div>
+  </main>
+  <script src="auth.js"></script>
+</body>
+</html>

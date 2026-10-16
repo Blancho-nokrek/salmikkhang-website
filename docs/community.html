@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#087c55">
+  <title>Community Chat | Salmikkhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="community.css">
+</head>
+<body class="chat-page">
+  <div class="chat-app">
+    <aside class="chat-sidebar">
+      <header class="side-top"><a class="mini-brand" href="/"><span>🌿</span><strong>Salmikkhang</strong></a><div class="side-tools"><button id="passwordBtn" class="round-action" title="Change password" aria-label="Change password">⚿</button><button id="logoutBtn" class="round-action" title="Log out" aria-label="Log out">⇥</button></div></header>
+      <div class="profile-strip"><div class="profile-avatar" id="profileAvatar">S</div><div class="profile-lines"><strong id="profileName">Loading…</strong><small id="profileRole">Community member</small></div><span class="profile-online" title="Signed in"></span></div>
+      <div class="side-search"><span>⌕</span><input id="chatSearch" type="search" placeholder="Search conversations"></div>
+      <button class="room-row active" type="button"><div class="room-avatar">🌱</div><div class="room-summary"><div><strong>Salmikkhang Community</strong><time id="roomTime">Now</time></div><p id="roomPreview">Group chat for all members</p></div><span class="room-dot"></span></button>
+      <div class="side-note"><span>🔒</span><div><strong>Community space</strong><p>Only signed-in members can read and send messages. Please be respectful to everyone.</p></div></div>
+      <div class="side-bottom"><span class="green-dot"></span><span>Connected to community server</span></div>
+    </aside>
+    <main class="chat-main">
+      <header class="chat-header"><div class="room-avatar header-room-avatar">🌱</div><div class="header-room-copy"><strong>Salmikkhang Community</strong><small id="memberStatus">Private group · members only</small></div><div class="header-actions"><a href="/" class="header-link">Website</a><button id="headerPasswordBtn" class="header-icon" title="Change password" aria-label="Change password">⚿</button></div></header>
+      <section class="chat-wall" id="chatWall" aria-label="Community messages"><div class="wall-date"><span>Today’s conversation</span></div><div class="chat-empty" id="chatEmpty"><div class="empty-art">🌿</div><h2>Welcome to the community</h2><p>Say hello and start a conversation with other members.</p></div><div id="messages" class="messages-list" aria-live="polite"></div></section>
+      <div class="chat-status" id="chatStatus" role="status" aria-live="polite"></div>
+      <form class="composer" id="messageForm"><button class="composer-emoji" type="button" id="emojiBtn" title="Add a friendly emoji" aria-label="Add emoji">☺</button><textarea id="messageInput" rows="1" maxlength="2000" placeholder="Write a message…  (Enter to send, Shift + Enter for a new line)" aria-label="Message" required></textarea><span class="char-count" id="charCount">0/2000</span><button class="send-button" type="submit" id="sendButton" aria-label="Send message" title="Send message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 2.5 14 21.5l-4.1-8-7.4-4 19-7Z"/><path d="m9.9 13.5 5-5"/></svg></button></form>
+    </main>
+  </div>
+  <div class="modal-scrim" id="passwordModal" hidden><section class="password-modal" role="dialog" aria-modal="true" aria-labelledby="passwordTitle"><header><div><span class="modal-eyebrow">ACCOUNT SECURITY</span><h2 id="passwordTitle">Change password</h2></div><button id="passwordClose" class="round-action" aria-label="Close">×</button></header><form id="passwordForm"><label for="currentPassword">Current password / admin passcode</label><input id="currentPassword" type="password" autocomplete="current-password" required maxlength="200"><label for="newPassword">New password</label><input id="newPassword" type="password" autocomplete="new-password" required minlength="8" maxlength="200"><label for="confirmPassword">Confirm new password</label><input id="confirmPassword" type="password" autocomplete="new-password" required minlength="8" maxlength="200"><p class="password-error" id="passwordError" role="alert" hidden></p><div class="modal-buttons"><button type="button" class="cancel-button" id="passwordCancel">Cancel</button><button type="submit" class="save-password" id="passwordSave">Save password</button></div></form></section></div>
+  <div class="chat-toast" id="chatToast" role="status" aria-live="polite"></div>
+  <script src="community.js"></script>
+</body>
+</html>
