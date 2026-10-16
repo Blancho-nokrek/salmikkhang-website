@@ -5,7 +5,7 @@
 <title>Salmikkhang | Admin Panel</title>
 <link rel="stylesheet" href="admin.css">
 </head>
-<body>
+<body class="admin-auth-pending">
 <div class="app">
   <aside class="sidebar" id="sidebar">
     <div class="brand"><div class="brand-mark">🌿</div><div><strong>Salmikkhang</strong><small>Youth Community</small></div></div>
@@ -18,9 +18,7 @@
     <button class="nav" data-page="gallery">▧ <span data-en="Gallery" data-bn="গ্যালারি">Gallery</span></button>
     <button class="nav" data-page="requests">✉ <span data-en="Join requests" data-bn="সদস্য আবেদন">Join requests</span><b id="requestBadge">3</b></button>
     <button class="nav" data-page="messages">☏ <span data-en="Messages" data-bn="বার্তা">Messages</span></button>
-    <button class="nav" data-page="accounts">♟ <span data-en="Member accounts" data-bn="সদস্য অ্যাকাউন্ট">Member accounts</span></button>
-    <button class="nav" data-page="roles">⌘ <span data-en="Roles" data-bn="রোল ব্যবস্থাপনা">Roles</span></button>
-    <button class="nav" data-page="community">☏ <span data-en="Community chat" data-bn="কমিউনিটি চ্যাট">Community chat</span></button>
+    <button class="nav" data-page="community">☘ <span data-en="Community Control" data-bn="কমিউনিটি নিয়ন্ত্রণ">Community Control</span></button>
     <div class="nav-label">SYSTEM</div>
     <button class="nav" data-page="settings">⚙ <span data-en="Settings" data-bn="সেটিংস">Settings</span></button>
     <div class="sidebar-bottom"><div class="online-dot"></div><div><strong>Admin workspace</strong><small>Local demo mode</small></div></div>
@@ -29,12 +27,12 @@
     <header class="topbar">
       <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
       <div class="crumb">Salmikkhang <span>/</span> <strong id="crumbTitle">Dashboard</strong></div>
-      <div class="top-actions"><button class="lang-btn" id="langBtn">বাংলা</button><button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button><button class="icon-btn" id="adminLogout" title="Log out" aria-label="Log out">⇥</button><div class="avatar" id="adminAvatar">A</div><div class="profile"><strong id="adminProfileName">Community Admin</strong><small>Administrator</small></div></div>
+      <div class="top-actions"><a class="lang-btn" href="../community.html" style="text-decoration:none">Community</a><button class="lang-btn" id="langBtn">বাংলা</button><button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button><button class="lang-btn" id="adminLogout" type="button">Log out</button><div class="avatar">A</div><div class="profile"><strong>Community Admin</strong><small>Administrator</small></div></div>
     </header>
     <section class="content">
       <div class="welcome"><div><p class="eyebrow">GAIRA · JOLCHOTRO · MODHUPUR · TANGAIL</p><h1 id="pageTitle">Good afternoon, Admin <span>🌱</span></h1><p class="muted" id="pageSubtitle">Here’s what’s happening in your community today.</p></div><div class="today" id="today"></div></div>
-      <div id="pageContent"></div>
-      <footer>© <span id="year"></span> Salmikkhang Youth Community <span>•</span> Admin workspace</footer>
+      <div id="pageContent"></div><div id="communityAdminRoot" class="community-admin-root" hidden></div>
+      <footer>© <span id="year"></span> Salmikkhang Youth Community <span>•</span> Admin demo</footer>
     </section>
   </main>
 </div>
@@ -42,5 +40,10 @@
   <div class="modal"><div class="modal-head"><h2 id="modalTitle">Add item</h2><button class="icon-btn" id="closeModal">×</button></div><form id="itemForm"><div id="formFields"></div><div class="modal-actions"><button type="button" class="btn secondary" id="cancelModal">Cancel</button><button class="btn primary" type="submit">Save</button></div></form></div>
 </div>
 <div class="toast" id="toast"></div>
+<div id="adminAuthGate" class="admin-auth-gate" role="dialog" aria-modal="true" aria-labelledby="adminAuthTitle"><form id="adminAuthForm" class="admin-auth-card"><div class="admin-auth-mark">🌿</div><p class="admin-auth-eyebrow">SALMIKKHANG · RESTRICTED ACCESS</p><h1 id="adminAuthTitle">Admin Panel Login</h1><p>Use the Admin ID and passcode created for an authorized administrator. A role selection alone never grants permission.</p><div class="field"><label for="adminAuthName">Admin name</label><input id="adminAuthName" required autocomplete="name" maxlength="100"></div><div class="field"><label for="adminAuthRole">Role</label><select id="adminAuthRole" required><option value="">Loading roles…</option></select></div><div class="field"><label for="adminAuthId">Admin ID</label><input id="adminAuthId" required autocomplete="username" maxlength="40" placeholder="ADMIN-001"></div><div class="field"><label for="adminAuthPassword">Passcode / Password</label><input id="adminAuthPassword" type="password" required autocomplete="current-password"></div><div id="adminAuthStatus" class="admin-auth-status" role="status" hidden></div><button class="btn primary" type="submit">Secure sign in</button><a href="../community.html">← Return to Community</a></form></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../community-config.js"></script>
+<script src="admin-guard.js"></script>
 <script src="admin.js"></script>
+<script src="community-admin.js"></script>
 </body></html>

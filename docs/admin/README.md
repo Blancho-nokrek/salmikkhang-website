@@ -1,14 +1,29 @@
-# Salmikkhang Admin Workspace
+# Salmikkhang Admin Panel (Frontend Demo)
 
-The existing dashboard design and original news/events/projects/gallery/request/message views are retained. The admin workspace is now protected by the server; opening `/admin/` without an active administrator session redirects to sign-in.
+A responsive admin dashboard for the Salmikkhang Youth Community website.
 
-## Access
+## Run locally
+1. Extract the ZIP.
+2. Open a terminal in this folder.
+3. Run `python -m http.server 8000`
+4. Visit http://localhost:8000
 
-1. Start the project from its root folder with `python3 server.py`.
-2. Create the first admin at `/setup.html` on first run.
-3. Sign in at `/login.html` using the admin name, role **Admin**, and the passcode you created.
-4. Open **Member accounts** to generate member IDs and initial passwords, **Roles** to maintain the role dropdown, or **Community chat** to send/delete messages.
+You can also open `index.html` directly, though a local server is recommended.
 
-The database is stored in `instance/salmikkhang.db`. Passwords are hashed server-side; do not share admin credentials or commit the database to a public repository.
+## Included
+- Dashboard metrics and activity
+- CRUD-style management for members, news, events, projects, join requests and messages
+- Gallery album label management
+- English/Bangla language toggle for navigation and key labels
+- Search, approve join requests, delete/edit records
+- Community settings, JSON export, demo reset
+- Responsive mobile sidebar and dark mode
+- Browser localStorage persistence
 
-The older CMS-style data views are preserved as they were and continue to use browser localStorage. Their edits do not automatically publish content to all website visitors; this is noted in the main README.
+## Important security limitation
+This is a **frontend-only prototype**. It has no real login, server, database, permissions, or server-side validation. Any visitor can access the panel and browser-stored data is not shared between users/devices. Do not enter real private member information. Before production, add secure authentication and authorization, a backend API, database, input validation, HTTPS, backups, and secure image storage.
+
+
+## Community login, member IDs and group chat
+
+The existing homepage and Admin Panel are preserved. The rightmost header action now links to `community.html`. New pages: `community.html` (role dropdown, invite-code join request, member/admin login, group chat) and `members.html` (public name/photo/role directory). Admin Panel adds a protected `Community Control` section. To activate real authentication and shared chat, configure `community-config.js`, run `supabase/community_setup.sql`, create the initial admin account and deploy `supabase/functions/admin-create-account`; follow `supabase/SETUP_BN.md`. Never expose the Supabase service-role key in browser files. The original content editor remains browser-local demo data.
