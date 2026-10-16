@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087c55">
+  <meta name="description" content="Salmikkhang Village Youth Community — together for a better tomorrow in Gaira, Jolchotro, Madhupur, Tangail.">
+  <title>Salmikkhang — Village Youth Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Salmikkhang home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M4 38 17 19l7 10 7-14 13 23H4Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="m10 38 8-11 7 11M27 38l5-8 7 8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="35" cy="9" r="4" stroke="currentColor" stroke-width="2.4"/><path d="M35 2v3M35 13v3M28 9h3M39 9h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-copy"><strong>SALMIKKHANG</strong><small data-en="Village Youth Community" data-bn="গ্রাম যুব কমিউনিটি">Village Youth Community</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="active" href="#home" data-en="Home" data-bn="হোম">Home</a>
+      <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+      <a href="#events" data-en="Events" data-bn="অনুষ্ঠান">Events</a>
+      <a href="#news" data-en="News" data-bn="খবর">News</a>
+      <a href="#projects" data-en="Projects" data-bn="উদ্যোগ">Projects</a>
+      <a href="#gallery" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.3 4.3"/></svg></button>
+      <button class="language-switch" id="languageSwitch" aria-label="Switch language">বাংলা</button>
+      <a class="btn btn-primary header-join" href="#join" data-en="Join Our Community" data-bn="কমিউনিটিতে যোগ দিন">Join Our Community</a>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel" hidden>
+    <label for="siteSearch" data-en="Search the website" data-bn="ওয়েবসাইটে খুঁজুন">Search the website</label>
+    <div class="search-row"><input id="siteSearch" type="search" placeholder="Search news, events, projects..." data-placeholder-en="Search news, events, projects..." data-placeholder-bn="খবর, অনুষ্ঠান, উদ্যোগ খুঁজুন..."><button class="btn btn-primary" id="searchGo" data-en="Search" data-bn="খুঁজুন">Search</button></div>
+    <p class="search-feedback" id="searchFeedback" aria-live="polite"></p>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow" data-en="ROOTED IN OUR VILLAGE" data-bn="আমাদের গ্রামের শিকড়ে">ROOTED IN OUR VILLAGE</span>
+          <h1 data-en="Our Village.<br>Youth. Community." data-bn="আমাদের গ্রাম।<br>যুবসমাজ। কমিউনিটি।">Our Village.<br>Youth. Community.</h1>
+          <p class="hero-lead" data-en="Young minds. Stronger community." data-bn="তারুণ্যের শক্তি, ঐক্যবদ্ধ কমিউনিটি।">Young minds. Stronger community.</p>
+          <p class="hero-description" data-en="We are Salmikkhang — village youth working together to build a better, greener and more united future for Gaira and our wider community." data-bn="আমরা সালমিকখাং—গাইরা ও আমাদের আশপাশের মানুষের জন্য আরও সুন্দর, সবুজ ও ঐক্যবদ্ধ ভবিষ্যৎ গড়তে একসঙ্গে কাজ করা একদল তরুণ।">We are Salmikkhang — village youth working together to build a better, greener and more united future for Gaira and our wider community.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#about" data-en="Explore Our Community" data-bn="আমাদের কমিউনিটি দেখুন">Explore Our Community <span>→</span></a><a class="btn btn-outline-light" href="#about" data-en="Learn More" data-bn="আরও জানুন">Learn More</a></div>
+        </div>
+        <div class="hero-note"><span data-en="Small Village" data-bn="ছোট্ট গ্রাম">Small Village</span><span data-en="Big Dreams" data-bn="বড় স্বপ্ন">Big Dreams</span><i></i></div>
+      </div>
+      <div class="hero-location"><span class="location-dot"></span> Gaira, Jolchotro · Madhupur, Tangail</div>
+    </section>
+
+    <section class="quick-links wrap" aria-label="Explore community">
+      <a class="quick-card" href="#team"><span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><strong data-en="Meet Our Youth" data-bn="আমাদের তরুণরা">Meet Our Youth</strong><p data-en="Get to know our community and team." data-bn="আমাদের কমিউনিটি ও দলের সঙ্গে পরিচিত হন।">Get to know our community and team.</p></a>
+      <a class="quick-card" href="#events"><span class="quick-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></svg></span><strong data-en="Upcoming Events" data-bn="আসন্ন অনুষ্ঠান">Upcoming Events</strong><p data-en="Join our programs and activities." data-bn="আমাদের অনুষ্ঠান ও কার্যক্রমে যোগ দিন।">Join our programs and activities.</p></a>
+      <a class="quick-card" href="#learn"><span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M12 7v14M12 7C9 4 5 4 2 5v14c4-1 7-1 10 2M12 7c3-3 7-3 10-2v14c-4-1-7-1-10 2"/></svg></span><strong data-en="Learn & Grow" data-bn="শিখি ও এগিয়ে যাই">Learn & Grow</strong><p data-en="Share knowledge, skills and opportunities." data-bn="জ্ঞান, দক্ষতা ও সুযোগ ভাগ করে নিই।">Share knowledge, skills and opportunities.</p></a>
+      <a class="quick-card" href="#projects"><span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M20.5 3.5C12 3 5 6 5 13a6 6 0 0 0 6 6c7 0 10-7 9.5-15.5Z"/><path d="M3 21c3-6 7-9 12-12"/></svg></span><strong data-en="Community Projects" data-bn="সামাজিক উদ্যোগ">Community Projects</strong><p data-en="Together we can make a difference." data-bn="একসঙ্গে আমরা পরিবর্তন আনতে পারি।">Together we can make a difference.</p></a>
+      <a class="quick-card" href="#gallery"><span class="quick-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></span><strong data-en="Photo Gallery" data-bn="ছবির গ্যালারি">Photo Gallery</strong><p data-en="Relive moments and celebrations." data-bn="স্মৃতি ও আনন্দের মুহূর্তগুলো দেখুন।">Relive moments and celebrations.</p></a>
+      <a class="quick-card" href="#join"><span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span><strong data-en="Get Involved" data-bn="যুক্ত হোন">Get Involved</strong><p data-en="Share ideas and help our village grow." data-bn="ধারণা ভাগ করুন, গ্রামের উন্নয়নে পাশে থাকুন।">Share ideas and help our village grow.</p></a>
+    </section>
+
+    <section class="content-section wrap">
+      <div class="news-column" id="news">
+        <div class="section-head"><div><span class="eyebrow green" data-en="STAY CONNECTED" data-bn="সঙ্গে থাকুন">STAY CONNECTED</span><h2 data-en="Latest News & Announcements" data-bn="সাম্প্রতিক খবর ও ঘোষণা">Latest News & Announcements</h2></div><a class="text-link" href="#news-list" data-en="View All →" data-bn="সব দেখুন →">View All →</a></div>
+        <div class="news-list" id="news-list">
+          <article class="news-item searchable" data-search="community village announcement clean-up">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=360&q=80" alt="Green countryside landscape">
+            <div class="news-body"><div class="news-title-row"><h3 data-en="Village Clean-Up Campaign" data-bn="গ্রাম পরিচ্ছন্নতা কর্মসূচি">Village Clean-Up Campaign</h3><span class="tag tag-green" data-en="Community" data-bn="কমিউনিটি">Community</span></div><p data-en="We plan to bring neighbours together for a cleaner, healthier village. Event details will be announced here." data-bn="পরিচ্ছন্ন ও স্বাস্থ্যকর গ্রাম গড়তে আমরা সবাইকে একসঙ্গে কাজ করার আহ্বান জানাই। বিস্তারিত এখানে জানানো হবে।">We plan to bring neighbours together for a cleaner, healthier village. Event details will be announced here.</p><small class="muted" data-en="Community update · Details to be confirmed" data-bn="কমিউনিটি আপডেট · তারিখ পরে জানানো হবে">Community update · Details to be confirmed</small></div>
+          </article>
+          <article class="news-item searchable" data-search="education study support learning students">
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=360&q=80" alt="Young people studying together">
+            <div class="news-body"><div class="news-title-row"><h3 data-en="Learning & Skills Support" data-bn="শিক্ষা ও দক্ষতা উন্নয়ন">Learning & Skills Support</h3><span class="tag tag-blue" data-en="Education" data-bn="শিক্ষা">Education</span></div><p data-en="We want to encourage learning, peer support and opportunities for local youth." data-bn="স্থানীয় তরুণদের পড়াশোনা, পারস্পরিক সহযোগিতা ও দক্ষতা উন্নয়নে উৎসাহিত করাই আমাদের লক্ষ্য।">We want to encourage learning, peer support and opportunities for local youth.</p><small class="muted" data-en="Community idea · Program details to be confirmed" data-bn="কমিউনিটির পরিকল্পনা · বিস্তারিত পরে জানানো হবে">Community idea · Program details to be confirmed</small></div>
+          </article>
+          <article class="news-item searchable" data-search="tree planting environment nature">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=360&q=80" alt="Small green plant growing in soil">
+            <div class="news-body"><div class="news-title-row"><h3 data-en="Greener Village Initiative" data-bn="সবুজ গ্রাম উদ্যোগ">Greener Village Initiative</h3><span class="tag tag-green" data-en="Environment" data-bn="পরিবেশ">Environment</span></div><p data-en="Tree planting and environmental awareness are ideas we hope to grow together as a community." data-bn="বৃক্ষরোপণ ও পরিবেশ সচেতনতার মাধ্যমে একসঙ্গে সবুজ ভবিষ্যৎ গড়ার পরিকল্পনা আমাদের রয়েছে।">Tree planting and environmental awareness are ideas we hope to grow together as a community.</p><small class="muted" data-en="Proposed initiative · Schedule to be confirmed" data-bn="প্রস্তাবিত উদ্যোগ · সময়সূচি পরে জানানো হবে">Proposed initiative · Schedule to be confirmed</small></div>
+          </article>
+          <article class="news-item searchable" data-search="sports youth football games">
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=360&q=80" alt="Football on a field">
+            <div class="news-body"><div class="news-title-row"><h3 data-en="Sports & Youth Activities" data-bn="খেলাধুলা ও যুব কার্যক্রম">Sports & Youth Activities</h3><span class="tag tag-purple" data-en="Sports" data-bn="খেলাধুলা">Sports</span></div><p data-en="Sports can build friendship, teamwork and a healthy community spirit." data-bn="খেলাধুলা বন্ধুত্ব, দলগত কাজ ও সুস্থ কমিউনিটি গড়তে সাহায্য করে।">Sports can build friendship, teamwork and a healthy community spirit.</p><small class="muted" data-en="Community idea · Updates coming later" data-bn="কমিউনিটির পরিকল্পনা · আপডেট পরে আসবে">Community idea · Updates coming later</small></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="events-column" id="events">
+        <div class="section-head"><div><span class="eyebrow green" data-en="SAVE THE DATE" data-bn="তারিখ মনে রাখুন">SAVE THE DATE</span><h2 data-en="Upcoming Events" data-bn="আসন্ন অনুষ্ঠান">Upcoming Events</h2></div><a class="text-link" href="#join" data-en="Get Involved →" data-bn="যুক্ত হোন →">Get Involved →</a></div>
+        <div class="event-list">
+          <article class="event-card searchable" data-search="community meeting youth gathering">
+            <div class="event-date"><span data-en="DATE" data-bn="তারিখ">DATE</span><strong>—</strong><small data-en="TBA" data-bn="পরে">TBA</small></div><div class="event-info"><h3 data-en="Community Meet-up" data-bn="কমিউনিটি মতবিনিময়">Community Meet-up</h3><p><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-en="Gaira · Venue to be confirmed" data-bn="গাইরা · স্থান পরে জানানো হবে">Gaira · Venue to be confirmed</span></p><p><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-en="Time to be announced" data-bn="সময় পরে জানানো হবে">Time to be announced</span></p></div>
+          </article>
+          <article class="event-card searchable" data-search="tree plantation environment">
+            <div class="event-date"><span data-en="DATE" data-bn="তারিখ">DATE</span><strong>—</strong><small data-en="TBA" data-bn="পরে">TBA</small></div><div class="event-info"><h3 data-en="Tree Plantation Drive" data-bn="বৃক্ষরোপণ কর্মসূচি">Tree Plantation Drive</h3><p><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-en="Community location · TBA" data-bn="কমিউনিটির স্থান · পরে">Community location · TBA</span></p><p><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-en="Time to be announced" data-bn="সময় পরে জানানো হবে">Time to be announced</span></p></div>
+          </article>
+          <article class="event-card searchable" data-search="youth culture heritage">
+            <div class="event-date"><span data-en="DATE" data-bn="তারিখ">DATE</span><strong>—</strong><small data-en="TBA" data-bn="পরে">TBA</small></div><div class="event-info"><h3 data-en="Youth Cultural Program" data-bn="যুব সাংস্কৃতিক অনুষ্ঠান">Youth Cultural Program</h3><p><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-en="Venue to be confirmed" data-bn="স্থান পরে জানানো হবে">Venue to be confirmed</span></p><p><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-en="Time to be announced" data-bn="সময় পরে জানানো হবে">Time to be announced</span></p></div>
+          </article>
+          <p class="note-small" data-en="Event dates are placeholders until confirmed by the community organizers." data-bn="কমিউনিটির আয়োজকদের দ্বারা নিশ্চিত না হওয়া পর্যন্ত অনুষ্ঠানগুলোর তারিখ নির্ধারিত নয়।">Event dates are placeholders until confirmed by the community organizers.</p>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="quote-card"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=85" alt="Golden sunlight over green countryside"><div class="quote-overlay"><span class="quote-mark">“</span><p data-en="Together we can build a brighter future for our village." data-bn="একসঙ্গে আমরা আমাদের গ্রামের আরও উজ্জ্বল ভবিষ্যৎ গড়তে পারি।">Together we can build a brighter future for our village.</p><small>— Salmikkhang</small></div></div>
+        <div class="quick-box"><h3 data-en="Quick Links" data-bn="দ্রুত লিংক">Quick Links</h3><a href="#about"><span>♧</span><span data-en="About Our Community" data-bn="আমাদের পরিচিতি">About Our Community</span><b>›</b></a><a href="#projects"><span>♧</span><span data-en="Our Projects" data-bn="আমাদের উদ্যোগ">Our Projects</span><b>›</b></a><a href="#gallery"><span>▧</span><span data-en="Gallery" data-bn="গ্যালারি">Gallery</span><b>›</b></a><a href="#contact"><span>✉</span><span data-en="Contact Us" data-bn="যোগাযোগ করুন">Contact Us</span><b>›</b></a></div>
+      </aside>
+    </section>
+
+    <section class="goals-strip" id="about">
+      <div class="goals-inner wrap">
+        <div class="goals-intro"><span class="goal-symbol">♧</span><div><h2 data-en="Our Goals" data-bn="আমাদের লক্ষ্য">Our Goals</h2><p data-en="Empower youth, strengthen our community, and create sustainable development for our village." data-bn="যুবসমাজকে এগিয়ে নেওয়া, কমিউনিটিকে শক্তিশালী করা এবং গ্রামের টেকসই উন্নয়নে কাজ করা।">Empower youth, strengthen our community, and create sustainable development for our village.</p></div></div>
+        <div class="goal"><svg viewBox="0 0 24 24"><path d="M2 10 12 4l10 6-10 6-10-6Z"/><path d="M6 13v5c4 3 8 3 12 0v-5M22 10v6"/></svg><span data-en="Education & Skills" data-bn="শিক্ষা ও দক্ষতা">Education & Skills</span></div>
+        <div class="goal"><svg viewBox="0 0 24 24"><path d="M20.5 3.5C12 3 5 6 5 13a6 6 0 0 0 6 6c7 0 10-7 9.5-15.5Z"/><path d="M3 21c3-6 7-9 12-12"/></svg><span data-en="Environmental Care" data-bn="পরিবেশ সংরক্ষণ">Environmental Care</span></div>
+        <div class="goal"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87"/></svg><span data-en="Community Service" data-bn="সমাজসেবা">Community Service</span></div>
+        <div class="goal"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-en="Unity & Leadership" data-bn="ঐক্য ও নেতৃত্ব">Unity & Leadership</span></div>
+      </div>
+    </section>
+
+    <section class="standard-section wrap" id="projects">
+      <div class="section-head"><div><span class="eyebrow green" data-en="SMALL STEPS, REAL CHANGE" data-bn="ছোট পদক্ষেপ, বাস্তব পরিবর্তন">SMALL STEPS, REAL CHANGE</span><h2 data-en="Community Projects" data-bn="কমিউনিটির উদ্যোগ">Community Projects</h2></div><p class="section-subtitle" data-en="Ideas that bring people together and help our village thrive." data-bn="মানুষকে একত্র করে আমাদের গ্রামকে এগিয়ে নেওয়ার উদ্যোগ।">Ideas that bring people together and help our village thrive.</p></div>
+      <div class="project-grid">
+        <article class="project-card searchable" data-search="environment trees planting"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=85" alt="Plant growing in soil"><div class="project-content"><span class="project-status" data-en="IDEA / PLANNED" data-bn="পরিকল্পনাধীন">IDEA / PLANNED</span><h3 data-en="Greener Gaira" data-bn="সবুজ গাইরা">Greener Gaira</h3><p data-en="Explore tree planting, waste awareness and caring for local green spaces." data-bn="বৃক্ষরোপণ, বর্জ্য সচেতনতা ও স্থানীয় সবুজ পরিবেশ রক্ষার উদ্যোগ।">Explore tree planting, waste awareness and caring for local green spaces.</p><a class="text-link" href="#join" data-en="Support this idea →" data-bn="উদ্যোগে যুক্ত হোন →">Support this idea →</a></div></article>
+        <article class="project-card searchable" data-search="education skills learning youth"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=800&q=85" alt="Students working together"><div class="project-content"><span class="project-status" data-en="IDEA / PLANNED" data-bn="পরিকল্পনাধীন">IDEA / PLANNED</span><h3 data-en="Learn Together" data-bn="একসঙ্গে শিখি">Learn Together</h3><p data-en="Encourage peer learning, digital skills and sharing educational resources." data-bn="পারস্পরিক শিক্ষা, ডিজিটাল দক্ষতা ও শিক্ষাসামগ্রী ভাগাভাগিতে উৎসাহ।">Encourage peer learning, digital skills and sharing educational resources.</p><a class="text-link" href="#join" data-en="Share your skills →" data-bn="দক্ষতা ভাগ করুন →">Share your skills →</a></div></article>
+        <article class="project-card searchable" data-search="community service village clean-up"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=85" alt="Community volunteers working together"><div class="project-content"><span class="project-status" data-en="IDEA / PLANNED" data-bn="পরিকল্পনাধীন">IDEA / PLANNED</span><h3 data-en="Together for Gaira" data-bn="গাইরার জন্য একসঙ্গে">Together for Gaira</h3><p data-en="Build a culture of volunteering, mutual help and community care." data-bn="স্বেচ্ছাসেবা, পারস্পরিক সহযোগিতা ও সামাজিক যত্নের সংস্কৃতি গড়ে তোলা।">Build a culture of volunteering, mutual help and community care.</p><a class="text-link" href="#join" data-en="Get involved →" data-bn="যুক্ত হোন →">Get involved →</a></div></article>
+      </div>
+    </section>
+
+    <section class="standard-section gallery-section" id="gallery">
+      <div class="wrap">
+        <div class="section-head"><div><span class="eyebrow green" data-en="MEMORIES & MOMENTS" data-bn="স্মৃতি ও মুহূর্ত">MEMORIES & MOMENTS</span><h2 data-en="Community Photo Gallery" data-bn="কমিউনিটির ছবির গ্যালারি">Community Photo Gallery</h2></div><p class="section-subtitle" data-en="A place for approved photos from real community activities." data-bn="কমিউনিটির বাস্তব কার্যক্রমের অনুমোদিত ছবির জন্য একটি স্থান।">A place for approved photos from real community activities.</p></div>
+        <div class="gallery-grid">
+          <button class="gallery-tile tile-large" data-image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=90" aria-label="View countryside photo"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85" alt="Green countryside landscape"><span data-en="Our Village" data-bn="আমাদের গ্রাম">Our Village</span></button>
+          <button class="gallery-tile" data-image="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1400&q=90" aria-label="View learning photo"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=85" alt="Young people learning together"><span data-en="Learning Together" data-bn="একসঙ্গে শেখা">Learning Together</span></button>
+          <button class="gallery-tile" data-image="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=90" aria-label="View nature photo"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=85" alt="A growing plant"><span data-en="Care for Nature" data-bn="প্রকৃতির যত্ন">Care for Nature</span></button>
+          <button class="gallery-tile" data-image="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1400&q=90" aria-label="View volunteers photo"><img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=700&q=85" alt="Volunteers working together"><span data-en="Working Together" data-bn="একসঙ্গে কাজ">Working Together</span></button>
+        </div>
+        <p class="note-small" data-en="Illustrative stock photos are used for this prototype. Replace them with approved Salmikkhang community photos before launch." data-bn="এই প্রোটোটাইপে নমুনা স্টক ছবি ব্যবহার করা হয়েছে। প্রকাশের আগে অনুমোদিত সালমিকখাং কমিউনিটির ছবি দিয়ে প্রতিস্থাপন করুন।">Illustrative stock photos are used for this prototype. Replace them with approved Salmikkhang community photos before launch.</p>
+      </div>
+    </section>
+
+    <section class="standard-section wrap split-section" id="learn">
+      <div><span class="eyebrow green" data-en="GROW WITH US" data-bn="আমাদের সঙ্গে এগিয়ে যান">GROW WITH US</span><h2 data-en="Learn, Share, Lead." data-bn="শিখুন, ভাগ করুন, নেতৃত্ব দিন।">Learn, Share, Lead.</h2><p class="section-subtitle" data-en="A stronger community begins when young people have space to learn, share ideas and take positive action." data-bn="তরুণদের শেখা, ধারণা ভাগ করা এবং ইতিবাচক উদ্যোগ নেওয়ার সুযোগ তৈরি হলেই শক্তিশালী কমিউনিটির শুরু।">A stronger community begins when young people have space to learn, share ideas and take positive action.</p><a class="btn btn-primary" href="#join" data-en="Become a Volunteer →" data-bn="স্বেচ্ছাসেবক হোন →">Become a Volunteer →</a></div>
+      <div class="values-list"><div><span>01</span><div><h3 data-en="Education" data-bn="শিক্ষা">Education</h3><p data-en="Create ways to learn and share useful skills." data-bn="শেখা ও দরকারি দক্ষতা ভাগ করার সুযোগ তৈরি করা।">Create ways to learn and share useful skills.</p></div></div><div><span>02</span><div><h3 data-en="Respect & Inclusion" data-bn="সম্মান ও অন্তর্ভুক্তি">Respect & Inclusion</h3><p data-en="Make room for different voices and ideas." data-bn="বিভিন্ন মানুষের মতামত ও ধারণাকে গুরুত্ব দেওয়া।">Make room for different voices and ideas.</p></div></div><div><span>03</span><div><h3 data-en="Community Service" data-bn="সমাজসেবা">Community Service</h3><p data-en="Turn shared ideas into helpful local action." data-bn="সম্মিলিত ধারণাকে স্থানীয় কল্যাণমূলক কাজে রূপ দেওয়া।">Turn shared ideas into helpful local action.</p></div></div></div>
+    </section>
+
+    <section class="join-banner" id="join"><div class="join-banner-inner wrap"><div><span class="eyebrow light" data-en="YOUR VILLAGE. YOUR FUTURE." data-bn="তোমার গ্রাম। তোমার ভবিষ্যৎ।">YOUR VILLAGE. YOUR FUTURE.</span><h2 data-en="Be part of something good." data-bn="ভালো কিছুর অংশ হয়ে ওঠো।">Be part of something good.</h2><p data-en="Have an idea, a skill or a little time to give? We would love to hear from you." data-bn="তোমার কোনো ধারণা, দক্ষতা বা কিছু সময় দেওয়ার ইচ্ছা আছে? আমরা তোমার কথা শুনতে চাই।">Have an idea, a skill or a little time to give? We would love to hear from you.</p></div><a class="btn btn-white" href="#contact" data-en="Get Involved →" data-bn="যোগাযোগ করুন →">Get Involved →</a></div></section>
+
+    <section class="standard-section wrap contact-section" id="contact">
+      <div class="contact-intro"><span class="eyebrow green" data-en="LET'S TALK" data-bn="যোগাযোগ করি">LET'S TALK</span><h2 data-en="Contact Salmikkhang" data-bn="সালমিকখাং-এর সঙ্গে যোগাযোগ">Contact Salmikkhang</h2><p class="section-subtitle" data-en="Questions, ideas or offers to help? Send a message to the community organizers." data-bn="কোনো প্রশ্ন, ধারণা বা সহযোগিতার প্রস্তাব আছে? কমিউনিটির আয়োজকদের বার্তা পাঠান।">Questions, ideas or offers to help? Send a message to the community organizers.</p><div class="contact-detail"><span class="detail-icon">⌖</span><div><strong data-en="Our Location" data-bn="আমাদের অবস্থান">Our Location</strong><p>Gaira, Jolchotro, Madhupur, Tangail, Bangladesh</p></div></div><div class="contact-detail"><span class="detail-icon">✉</span><div><strong data-en="Community Contact" data-bn="কমিউনিটির যোগাযোগ">Community Contact</strong><p data-en="Official email and social links can be added here." data-bn="এখানে অফিসিয়াল ইমেইল ও সামাজিক যোগাযোগমাধ্যমের লিংক যোগ করা যাবে।">Official email and social links can be added here.</p></div></div></div>
+      <form class="contact-form" id="contactForm"><h3 data-en="Send a message" data-bn="বার্তা পাঠান">Send a message</h3><label for="contactName" data-en="Your name" data-bn="আপনার নাম">Your name</label><input id="contactName" name="name" required maxlength="80" placeholder="Name / নাম"><label for="contactMethod" data-en="Email or phone (optional)" data-bn="ইমেইল বা ফোন (ঐচ্ছিক)">Email or phone (optional)</label><input id="contactMethod" name="contact" maxlength="120" placeholder="Email or phone"><label for="contactMessage" data-en="Message" data-bn="বার্তা">Message</label><textarea id="contactMessage" name="message" required rows="4" maxlength="1500" placeholder="How can we help? / কীভাবে সহযোগিতা করতে পারি?"></textarea><p class="form-note" data-en="Prototype form: messages are not stored or sent until a backend is connected." data-bn="প্রোটোটাইপ ফর্ম: ব্যাকএন্ড যুক্ত না করা পর্যন্ত বার্তা সংরক্ষণ বা পাঠানো হবে না।">Prototype form: messages are not stored or sent until a backend is connected.</p><button class="btn btn-primary" type="submit" data-en="Prepare Message →" data-bn="বার্তা প্রস্তুত করুন →">Prepare Message →</button><p id="formFeedback" class="form-feedback" aria-live="polite"></p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main wrap"><a class="brand brand-footer" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" fill="none"><path d="M4 38 17 19l7 10 7-14 13 23H4Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="m10 38 8-11 7 11M27 38l5-8 7 8" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="35" cy="9" r="4" stroke="currentColor" stroke-width="2.4"/></svg></span><span class="brand-copy"><strong>SALMIKKHANG</strong><small data-en="Village Youth Community" data-bn="গ্রাম যুব কমিউনিটি">Village Youth Community</small></span></a><p class="footer-quote"><span data-en="“Small steps, big changes.”" data-bn="“ছোট পদক্ষেপ, বড় পরিবর্তন।”">“Small steps, big changes.”</span><small>— Salmikkhang</small></p><div class="footer-links"><a href="#about" data-en="About" data-bn="পরিচিতি">About</a><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a><a href="#privacy" id="privacyLink" data-en="Privacy" data-bn="গোপনীয়তা">Privacy</a><a href="#terms" id="termsLink" data-en="Terms" data-bn="শর্তাবলি">Terms</a></div></div>
+    <div class="footer-bottom wrap"><span>© <span id="year"></span> Salmikkhang Village Youth Community. <span data-en="All rights reserved." data-bn="সর্বস্বত্ব সংরক্ষিত।">All rights reserved.</span></span><span>Gaira, Jolchotro · Madhupur, Tangail</span></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Gallery image"><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" src="" alt=""></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
