@@ -121,4 +121,20 @@
     }, { rootMargin: '-30% 0px -60% 0px' });
     sections.forEach(section => observer.observe(section));
   }
+
+  const communityToggle = document.getElementById('communityMenuToggle');
+  const communityMenu = document.getElementById('communityMenu');
+  if (communityToggle && communityMenu) {
+    communityToggle.addEventListener('click', () => {
+      const open = communityMenu.hidden;
+      communityMenu.hidden = !open;
+      communityToggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.community-menu-wrap')) {
+        communityMenu.hidden = true;
+        communityToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 })();

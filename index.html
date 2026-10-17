@@ -10,6 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<style>
+.community-menu-wrap{position:relative}.community-menu{position:absolute;right:0;top:calc(100% + 10px);min-width:190px;background:#fff;border:1px solid #e3eee8;border-radius:14px;padding:8px;box-shadow:0 14px 36px #1232;z-index:1000}
+.community-menu a{display:block;padding:12px 14px;border-radius:9px;color:#173c2d;text-decoration:none;font-weight:600;white-space:nowrap}
+.community-menu a:hover{background:#edf7f1}
+@media(max-width:760px){.community-menu{right:0}}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -32,7 +38,13 @@
     <div class="header-actions">
       <button class="icon-btn" id="searchToggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.3 4.3"/></svg></button>
       <button class="language-switch" id="languageSwitch" aria-label="Switch language">বাংলা</button>
-      <a class="btn btn-primary header-join" href="community.html" data-en="Community" data-bn="কমিউনিটি">Community</a>
+      <div class="community-menu-wrap">
+        <button class="btn btn-primary header-join" id="communityMenuToggle" aria-expanded="false" aria-controls="communityMenu" data-en="Community" data-bn="কমিউনিটি">Community</button>
+        <div class="community-menu" id="communityMenu" hidden>
+          <a href="admin/index.html" data-en="Admin Panel" data-bn="অ্যাডমিন প্যানেল">Admin Panel</a>
+          <a href="member/index.html" data-en="Member Panel" data-bn="সদস্য প্যানেল">Member Panel</a>
+        </div>
+      </div>
     </div>
   </header>
 
